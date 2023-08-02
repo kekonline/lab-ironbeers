@@ -1,0 +1,22 @@
+<div>
+
+
+<div>
+    {{>bearpartials this }}
+{{!-- <img src="{{this.image_url}}" alt="beer picture">
+<h2>{{this.name}}</h2>
+<p>{{this.description}}</p>
+<p>{{this.tagline}}</p> --}}
+{{#each this.beersFromApi}}
+<h3>Food Pairing</h3>
+{{#each this.food_pairing}}
+<li>{{this}}</li>
+{{/each}}
+<h3>Brewers Tips</h3>
+<p>{{this.brewers_tips}}</p>
+</div>
+
+
+{{/each}}
+
+</div>
